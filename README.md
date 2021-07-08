@@ -16,3 +16,4 @@ sudo cp hid-query /usr/local/bin
 #####
 ##### 4. Download temper.sh bash script and use `sudo bash temper.sh` to monitor ambient temperature.
 #####
+##### Please note that the reported number could be 2 degrees higher than the real temperature.
