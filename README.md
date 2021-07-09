@@ -12,8 +12,12 @@ cmake .
 cd utils
 make
 sudo cp hid-query /usr/local/bin
+
+sudo apt install cron
+sudo systemctl enable cron
 ```
+##### Edit crontab file `sudo vi /etc/crontab`, add one line `15 0    * * *   root    bash /home/user/temper.sh`.
 #####
-##### 4. Download temper.sh bash script and use `sudo bash temper.sh` to monitor ambient temperature.
+##### 5. Run cron and email the temperature report to the user every 1 hour `sudo systemctl enable cron`. 
 #####
 ##### Please note that the reported number could be 2 degrees higher than the real temperature.
